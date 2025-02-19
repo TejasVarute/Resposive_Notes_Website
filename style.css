@@ -1,0 +1,76 @@
+.main-body{
+    display: grid;
+    grid-template-columns: minmax(200px, auto)1fr;
+    grid-template-areas: "sidebar mainContent";
+    grid-gap: 25px;
+}
+.sidebar{
+    grid-area: sidebar;
+    width: 185px;
+    box-shadow: 2px 1px 2px 3px;
+    border-radius: 20px;
+    padding: 10px;
+    position: fixed;
+}
+ul{
+    list-style: none;
+}
+hr{
+    margin-left: 10px;
+    height: 2px;
+    width: 98%;
+    background-color: black;
+}
+.side-title{
+    font-size: 14px;
+    font-weight: bold;
+    top: 4ch;
+    padding: 7px 50px;
+    box-shadow: 3px 1px 5px 3px;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.side-title:hover{
+    text-transform: uppercase;
+}
+.sidebar1{
+    margin-left: 10px;
+    width: 150px;
+    box-shadow: 3px 1px 5px 2px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all;
+}
+.side-data{
+    font-size: 12px;
+    font-weight: bold;
+    top: 4ch;
+    margin-left: 20px;
+    text-decoration: none;
+    color: gray;
+}
+.side-data:hover{
+    color: black;
+    text-transform: uppercase;
+}
+main#main-doc {
+    grid-area: mainContent;
+}
+.main-section{
+    text-align: justify;
+    box-shadow: 0 0 0 3px;
+    padding: 20px;
+    border-radius: 20px;;
+}
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+code {
+    background-color: #CCC;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+}
